@@ -1,0 +1,27 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height:100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(14, 132, 235);
+}
+
+.box {
+    margin: 20px;
+    background-color: rgb(15, 137, 224);
+}
+
+#espacador {
+    padding: 200px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%,
+    rgba(9,9,121,1) 35%, rgba(0,212,255,1)100%)
+
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Estilizando listas</title>
+
+    <style>
+        ul li {
+            /* retirando os icones de lista padrao  */
+            list-style-type: none;
+
+        }
+
+        ul {
+               /* deixando os itens de lista na horizontal  */
+               display:flex;
+               column-count: 3;
+               column-gap: 20px;
+        }
+
+        li {
+            opacity:0;
+            animation: fadeIn 0.5 ease forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 4;
+            }
+        }
+
+        li:nth-child(1) i { animation-delay: 0.1s; }
+        li:nth-child(1) i { animation-delay: 0.2s; }
+        li:nth-child(1) i { animation-delay: 0.3s; }
+
+    </style>
+
+</head>
+<body>
+
+    <ul>
+        <li> Item1 </li>
+        <li> Item2 </li>
+        <li> Item3 </li>
+    </ul>
+    
+</body>
+</html>
